@@ -9,7 +9,7 @@ exports.up = function(knex, Promise) {
       .unique()
       .notNullable();
     users.string('user_name').notNullable();
-    users.integer('user_canfix').references('objects.object_id');
+    users.integer('user_canfix');
     users.string('user_avatarurl');
     users.string('user_profile', 10000);
     users.string('user_location').notNullable();

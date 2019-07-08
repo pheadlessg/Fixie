@@ -1,0 +1,8 @@
+{
+  "objects": "/api/objects",
+  "users": "/api/users",
+  "types": "/api/types",
+  "single_user": "/api/users/:user_id",
+  "single_object": "/api/objects/:object_id",
+  "single_type": "/api/types/:type_id"
+}

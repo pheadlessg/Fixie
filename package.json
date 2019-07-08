@@ -4,7 +4,13 @@
   "description": "Full stack application for connecting people with broken things and people capable of fixing them",
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec"
+    "test": "mocha spec",
+    "pre-commit": "npm t",
+    "reset": "knex migrate:rollback && knex migrate:latest && knex seed:run ./seeds/seed.js",
+    "start": "node listen.js",
+    "seed:prod": "DB_URL=$(heroku config:get DATABASE_URL) knex seed:run --env production",
+    "migrate:latest:prod": "DB_URL=$(heroku config:get DATABASE_URL) knex migrate:latest --env production",
+    "migrate:rollback:prod": "DB_URL=$(heroku config:get DATABASE_URL) knex migrate:rollback --env production"
   },
   "author": "",
   "license": "ISC",
