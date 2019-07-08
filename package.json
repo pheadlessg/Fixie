@@ -1,0 +1,24 @@
+{
+  "name": "fixie",
+  "version": "0.0.1",
+  "description": "Full stack application for connecting people with broken things and people capable of fixing them",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.16.5",
+    "nodemon": "^1.19.1",
+    "pg": "^7.11.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "supertest": "^4.0.2"
+  }
+}
